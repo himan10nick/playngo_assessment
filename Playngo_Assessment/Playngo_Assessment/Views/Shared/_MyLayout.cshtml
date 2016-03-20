@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <link href="@Url.Content("~/Content/Layout.css")" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @RenderSection("Head",false)
+</head>
+<body>
+    <div class="container">
+        <center>
+            <table cellspacing="15" cellpadding="15">
+                <tr>
+                    <td class="menu">@Html.ActionLink("Home", "Index", "MyTemplate")</td>
+                    <td class="menu">@Html.ActionLink("Feedback", "Feedback", "MyTemplate")</td>
+                    <td class="menu">@Html.ActionLink("Reservation", "Reservation", "MyTemplate")</td>
+                </tr>
+            </table>
+           
+            @RenderBody()
+            <br />
+            
+        </center>
+    </div><!--Container-->
+</body>
+</html>

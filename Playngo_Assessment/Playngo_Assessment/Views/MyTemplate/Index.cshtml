@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "Home";
+    Layout = "~/Views/Shared/_MyLayout.cshtml";
+}
+
+<h2>Welcome to MovieFoo</h2>
+<table cellpadding="15" >
+    <tr>
+        @foreach (string strStatus in ViewBag.Status)
+        {
+            <td class="status">
+                @strStatus
+            </td>
+        }
+    </tr>
+    <tr>
+        @foreach (string strMovies in ViewBag.Movies)
+        {
+            <td class="movies">
+                @strMovies
+            </td>
+        }
+      </tr>
+    <tr>
+        <td colspan="4" id="image"></td>
+    </tr>
+</table>

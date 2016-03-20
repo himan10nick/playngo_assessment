@@ -1,0 +1,20 @@
+﻿@{
+    ViewBag.Title = "Feedback";
+    Layout = "~/Views/Shared/_MyLayout.cshtml";
+}
+
+<h2>People's Feeds</h2>
+
+<table class="feedback" cellpadding="5" cellspacing="15">
+    
+        @foreach (string strUsers in ViewBag.Users)
+        {
+            <tr>
+                <td class="feedback">
+                    @strUsers
+                </td>
+           </tr>
+        }
+    
+     
+</table>

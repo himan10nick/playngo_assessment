@@ -1,0 +1,112 @@
+﻿@font-face {
+    font-family: chalkone;
+    src: url('/Content/Fonts/SquareChalk.ttf');
+}
+
+@font-face {
+    font-family: chalktwo;
+    src: url('/Content/Fonts/SimplyChalky.ttf');
+}
+
+
+body {
+    background-color: black;
+}
+
+.container
+{
+    background-color: white;
+    margin-top: 5%;
+    margin-left: 2%;
+    margin-right: 2%;
+    box-shadow: 3px 3px 3px gray;
+    border-radius: 10px 10px;
+}
+
+.menu
+{
+    text-decoration: none;
+    font-family: chalktwo;
+    font-size: 15pt;
+    font: bold;
+    color: black;
+}
+
+table
+{
+border: none;   
+}
+
+td
+{
+    text-align: center;
+}
+
+.status
+{
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-family: sans-serif, Arial;
+    font: bold;
+    font-size: 15pt;
+  
+   
+}
+
+.movies
+{
+    background-color: white;
+    text-align: center;
+    color: black;
+    font-family: chalkone;
+    font: bold;
+    font-size: 15pt;
+}
+
+#image
+{
+    width: 400px;
+    height: 200px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+    -webkit-animation : myanimationMovie 5s infinite;
+	transition: 7s;
+}
+
+@-webkit-keyframes myanimationMovie
+{
+	0% {background-image: url('/Content/Images/cap.png');}
+	30% {background-image: url('/Content/Images/sui.png');}
+	50% {background-image: url('/Content/Images/doc.jpg');}
+	80% {background-image: url('/Content/Images/the.jpg');}
+    100% {background-image: url('/Content/Images/cap.png');}
+}
+
+h2
+{
+    font-family: chalktwo;
+    font-size: 15pt;
+    font: bold;
+}
+
+.feedback
+{
+    background-color: black;
+    color: white;
+    font-family: chalktwo;
+    font-size: 15pt;
+    font: bold;
+
+}
+
+
+.tickets
+{
+    background-color: black;
+    color: white;
+    font-family: chalktwo;
+    font-size: 15pt;
+    font: bold;
+
+}

@@ -1,0 +1,20 @@
+﻿@{
+    ViewBag.Title = "Reservation";
+    Layout = "~/Views/Shared/_MyLayout.cshtml";
+}
+
+<h2>Tickets Status (Ticketworld.net)</h2>
+
+<table cellpadding="15">
+    
+        @foreach (string strReservation in ViewBag.Reservation)
+        {
+            <tr>
+                <td class="tickets" align="left">
+                    @strReservation
+                </td>
+            </tr>
+        }
+    
+
+</table>
